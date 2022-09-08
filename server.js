@@ -8,6 +8,10 @@ const fs = require('fs');
 const Buffer = require('Buffer');
 const sharp = require('sharp');
 
+if (process.env.NODE_ENV.trim() == 'development') {
+  require('dotenv').config();
+}
+
 const app = express();
 app.use(express.json());
 
