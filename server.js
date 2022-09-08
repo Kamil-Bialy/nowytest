@@ -14,12 +14,12 @@ app.use(express.json());
 var options = {
   dotfiles: 'ignore',
   etag: false,
-  extensions: ['htm', 'html','css','js','ico','jpg','jpeg','png','svg'],
+  extensions: ['htm', 'html', 'css', 'js', 'ico', 'jpg', 'jpeg', 'png', 'svg'],
   index: ['index.html'],
   maxAge: '1m',
-  redirect: false
-}
-app.use(express.static('build', options))
+  redirect: false,
+};
+app.use(express.static('build', options));
 
 const MongoURL = process.env.MONGO_URL;
 const port = process.env.PORT || 5000;
@@ -117,7 +117,7 @@ app.get('/api/checkRole', async (req, res) => {
   const id = req.query.id;
   console.log(id);
   const user = await userModel.findOne({ _id: id }, { roleID: 1, _id: 0 });
-  console.log(user)
+  console.log(user);
   if (user === null) {
     return res.send({
       user: {
@@ -221,6 +221,7 @@ app.delete('/api/deleteStory', async (req, res) => {
 });
 
 app.get('/api/getStories', async (req, res) => {
+  console.log('Hallo');
   const stories = await userModel.aggregate([
     {
       $unwind: {
@@ -239,6 +240,7 @@ app.get('/api/getStories', async (req, res) => {
       },
     },
   ]);
+  console.log(stories);
 
   for (const story of stories) {
     if (story.stories.image) {
