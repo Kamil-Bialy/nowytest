@@ -1,0 +1,37 @@
+.footer {
+  clear: both;
+  grid-column: 1/-1;
+  background: rgb(17, 143, 228);
+  width: 100%;
+  color: white;
+  display: flex;
+  padding: 0px 0px;
+  justify-content: space-around;
+  align-items: center;
+  overflow: hidden;
+}
+
+.footerInfo {
+  color: #fff;
+  padding: 5px;
+  text-align: center;
+  margin: 10px;
+}
+
+.footerInfo a {
+  text-decoration: none;
+}
+
+.footerInfo a:visited {
+  color: inherit;
+}
+
+.icon {
+  width: 25px;
+  height: 25px;
+  margin: 0px 10px;
+}
+
+.icon:hover {
+  opacity: 0.5;
+}

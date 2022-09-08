@@ -1,0 +1,83 @@
+blockquote {
+  word-break: break-all;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+  padding: 5px;
+  width: 100%;
+  text-align: start;
+}
+
+.postImage {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.STmain {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.STcontainer {
+  display: flex;
+  width: 70%;
+  border-radius: 23px;
+  background: #ffffff;
+  box-shadow: 9px 9px 18px #b0b0b0, -9px -9px 18px #ffffff;
+  overflow: hidden;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+}
+
+.STPhotoContainer {
+  width: 100%;
+  height: 100%;
+}
+
+.STphoto {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.STsubText {
+  font-size: 22px;
+  min-height: 100px;
+  text-align: center;
+
+}
+.STquote {
+  font-size: 30px;
+  color: rgb(255, 214, 31);
+  text-shadow: -1px 1 black, 1 1px black, 1px 1 black, 1 -1px black;
+}
+.STtitle {
+  font-size: 165%;
+  display: flex;
+  min-height: 50px;
+  align-items: center;
+  border-bottom: 2px black solid;
+}
+.STbuttoncontainer {
+  display: flex;
+  width: 100%;
+  margin: 20px;
+  align-items: center;
+}
+@media screen and (max-width: 500px) {
+  .STbuttoncontainer {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .post {
+    width: 90%;
+  }
+}

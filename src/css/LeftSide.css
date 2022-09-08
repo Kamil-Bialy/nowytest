@@ -1,0 +1,17 @@
+.LeftContainer {
+  min-height: 100vh;
+  height: 800px;
+}
+
+.Left {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 1000px) {
+  .LeftContainer {
+    display: none;
+  }
+}

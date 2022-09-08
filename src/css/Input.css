@@ -1,0 +1,67 @@
+.input {
+  margin-top: 20px;
+  margin-bottom: 5px;
+  font-size: 175%;
+  color: black;
+  border-style: none;
+  border-bottom: 4px black solid;
+  background-color: transparent;
+  width: 100%;
+}
+
+.input:focus {
+  outline: none;
+  transition: 0.2s;
+  border-bottom: 4px rgb(17, 143, 228) solid;
+}
+
+.inputContainer {
+  font-size: 18px;
+  flex: 1 1 33%;
+}
+
+.inputTitle {
+  text-align: left;
+}
+
+.inputError {
+  border-bottom: 4px red solid;
+}
+
+.inputErrorText {
+  color: red;
+  font-size: 14px;
+  height: 20px;
+  text-align: left;
+}
+
+@media screen and (max-width: 800px) {
+  .input {
+    width: 90vw;
+  }
+}
+/* @media (prefers-color-scheme: dark) {
+    .inputs{
+        width: 70%;
+        padding-top: 20px;
+        margin-bottom: 20px;
+        font-size: 200%;
+        color: white;
+        border-style: none;
+        border-bottom: 4px white solid;
+        background-color: black;
+    }
+    ::placeholder { 
+        color: white;
+        opacity: 1; 
+      }
+      
+      :-ms-input-placeholder { 
+        color: white;
+      }
+      
+      ::-ms-input-placeholder { 
+        color: white;
+      }
+} */
+

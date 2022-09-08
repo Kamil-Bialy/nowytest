@@ -1,0 +1,136 @@
+.rightSide {
+  min-height: 100vh;
+  overflow: hidden;
+}
+.imgContainer {
+  height: 100px;
+}
+.img {
+  max-height: 100%;
+  width: auto;
+  float: left;
+  /* padding: 20px; */
+}
+.title {
+  font-size: 200%;
+  text-align: center;
+  width: 90%;
+}
+.formContainer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  justify-content: center;
+  align-items: center;
+}
+.subTitle {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 300%;
+  color: black;
+}
+
+.loginInputsWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form {
+  flex: 100px;
+  text-align: center;
+}
+.link {
+  font-size: 120%;
+  color: rgb(17, 143, 228);
+}
+.linkContainer {
+  margin-top: 5px;
+}
+
+.submitButton {
+  margin: 20px;
+  line-height: 70px;
+  border-radius: 40px;
+  padding-left: 40px;
+  padding-right: 40px;
+  border-style: none;
+  color: white;
+  font-weight: bolder;
+  font-size: 26px;
+  cursor: pointer;
+  background-color: rgb(17, 143, 228);
+}
+
+@media screen and (max-height: 800px) and (max-width: 1200px) {
+  .img {
+    padding: 0;
+  }
+  .title {
+    margin-top: -40px;
+  }
+  .formContainer {
+    margin-top: 40px;
+  }
+  form {
+    margin-top: -40px;
+  }
+  .subTitle {
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .rightSide {
+    width: 100%;
+  }
+  .formContainer {
+    gap: 25px;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  form {
+    width: 80%;
+  }
+}
+.ModalBox{
+  padding: 40px 40px 0px 40px;
+  position: absolute;
+  background: #f1f1f1;
+  border: 1px black solid;
+  border-radius: 20px;
+}
+.ModalInnerBox{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.ButtonModalConatainer{
+  padding-top: 30px;
+}
+.buttonCloseModal{
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin: 10px;
+  font-size: 150%;
+  -webkit-touch-callout: none; /* iOS Safari                           */
+    -webkit-user-select: none; /* Safari                               */
+    -khtml-user-select: none; /* Konqueror HTML                       */
+    -moz-user-select: none; /* Firefox w przeszłości (stare wersje) */
+    -ms-user-select: none; /* Internet Explorer (>=10) / Edge      */
+    user-select: none;
+}
+/* @media (prefers-color-scheme: dark) {
+    .title{
+        color: white;
+    }
+    .subTitle{
+        color: white;
+    }
+    .rightSide{
+        background-color: black;
+    }
+} */

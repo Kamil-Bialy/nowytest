@@ -1,0 +1,63 @@
+.registerPage {
+  background-image: url('../images/szkola1.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.registerContainer {
+  min-height: 100vh;
+  background-color: white;
+  width: 850px;
+  display: grid;
+  grid-template-rows: 1fr 2fr 1fr;
+  row-gap: 20px;
+}
+
+.header {
+  padding: 10px;
+  position: relative;
+}
+
+.logo {
+  width: 25%;
+  max-width: 100px;
+  left: 0;
+  padding: initial;
+  margin-left: 10px;
+}
+
+.headerTitle {
+  text-align: center;
+  margin: 0;
+}
+
+.registerInputContainer {
+  padding: 10px;
+  justify-content: space-evenly;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 10px;
+  width: 100%;
+  height: 100%;
+}
+
+.registerButton {
+  margin-bottom: 15px;
+  text-align: center;
+}
+.backToLogin {
+  display: flex;
+  justify-content: center;
+}
+@media screen and (max-width: 850px) {
+  .registerContainer {
+    width: 100%;
+  }
+}

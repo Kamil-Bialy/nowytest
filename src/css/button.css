@@ -1,0 +1,22 @@
+.button {
+  margin: 20px;
+  line-height: 70px;
+  border-radius: 40px;
+  padding-left: 40px;
+  padding-right: 40px;
+  
+  border-style: none;
+  color: white;
+  font-weight: bolder;
+  font-size: 26px;
+  cursor: pointer;
+}
+.buttonblue{
+  background-color: rgb(17, 143, 228);
+}
+.buttonred{
+  background-color: red;
+}
+.buttongreen{
+  background-color: rgb(31, 177, 18);
+}

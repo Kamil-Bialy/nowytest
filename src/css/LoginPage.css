@@ -1,0 +1,13 @@
+.loginPageContainer {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 6fr 4fr;
+}
+
+@media screen and (max-width: 1000px) {
+  .loginPageContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}

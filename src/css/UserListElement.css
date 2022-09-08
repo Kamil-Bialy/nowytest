@@ -1,0 +1,132 @@
+.ULEmain {
+  width: 90%;
+  margin: 0 auto;
+}
+.ULElist {
+  padding: 1rem;
+}
+.ULEline {
+  margin-bottom: 1rem;
+
+  background-color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.ULEline:hover {
+  box-shadow: 0 0 0.8rem rgba(0, 0, 0, 0.3);
+}
+.ULEname {
+  font-size: 2rem;
+  color: #111;
+}
+.ULEemail {
+  font-size: 1rem;
+  color: rgba(162, 162, 162);
+}
+.ULEp {
+  font-size: 1rem;
+  color: #111;
+  font-weight: 500;
+  min-width: 68px;
+  display: flex;
+  justify-content: flex-end;
+  justify-content: center;
+  text-align: center;
+}
+.ULEuser {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.ULEprofile img {
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.ULEuser .ULEdetails {
+  line-height: 1.3;
+  width: 30vw;
+  word-break: normal;
+}
+.ULEstatus {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.ULEstatus span {
+  display: inline-block;
+  width: 0.35rem;
+  height: 0.35rem;
+  border-radius: 50%;
+  background-color: lime;
+}
+.ULEstatus p {
+  margin-left: 0.5rem;
+}
+.ULEstatus .ULEpending {
+  background-color: red;
+}
+.ULEbtn {
+  display: inline-block;
+  color: white;
+  padding: 0.4rem 0.8rem;
+  font-size: 0.8rem;
+  border-radius: 0.2rem;
+  margin-right: 5px;
+  margin-left: 5px;
+  text-align: center;
+  cursor: pointer;
+}
+.ULEgreen {
+  background-color: rgb(31, 177, 31);
+}
+.ULEred {
+  background-color: red;
+}
+.ULEblue {
+  background-color: rgba(14, 131, 214);
+}
+a {
+  text-decoration: none;
+}
+.ULEacc {
+  width: 45%;
+}
+
+.ULEcontact {
+  display: flex;
+  min-width: 252px;
+  justify-content: space-around;
+}
+
+.ULEcontact:only-child {
+  justify-content: center;
+}
+.ULEphone{
+  min-width: 200px;
+}
+
+@media screen and (max-width: 1200px) {
+  .ULEuser {
+    flex-direction: column;
+  }
+  .ULEname {
+    text-align: center;
+  }
+  .ULEemail {
+    text-align: center;
+  }
+  .ULEuser .ULEdetails {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.ULEstatusRow {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}

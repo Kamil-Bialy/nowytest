@@ -1,0 +1,56 @@
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.pagination ul {
+  position: relative;
+  background: #fff;
+  display: flex;
+  padding: 10px 20px;
+  border-radius: 50px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.pagination ul li {
+  list-style: none;
+  line-height: 50px;
+  margin: 0 5px;
+}
+
+.pagination ul li:first-child {
+  margin-right: 30px;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.pagination ul li:first-child {
+  margin-left: 30px;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.pageItem {
+  width: 75px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+}
+
+.pageLink {
+  display: block;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 50%;
+}
+
+.pageItemActive {
+  background-color: rgb(17, 143, 228);
+}
+
+.pageLinkActive {
+  color: white;
+}

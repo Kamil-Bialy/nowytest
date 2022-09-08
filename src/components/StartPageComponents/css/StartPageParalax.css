@@ -1,0 +1,28 @@
+.SPPstatement {
+  display: flex;
+  background-image: url('../../../images/szkola1.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  height: 100px;
+  justify-content: center;
+}
+.SPPstatement p {
+  margin: 0;
+  font-family: 'Oswald', sans-serif;
+  text-align: center;
+  color: white;
+  text-shadow: -1px 1 black, 1 1px black, 1px 1 black, 1 -1px black;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+.SPPcontainer {
+  display: flex;
+  justify-content: space-between;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  align-items: center;
+}

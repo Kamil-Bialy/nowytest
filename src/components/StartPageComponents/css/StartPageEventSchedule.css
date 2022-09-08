@@ -1,0 +1,52 @@
+.SPSHabout {
+  background-color: #f0f3f3;
+}
+.SPSHcontainer {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 80px 200px;
+  display: flex;
+  justify-content: center;
+}
+
+.SPSHsection-title {
+  text-align: center;
+  position: absolute;
+  text-align: center;
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+.SPSHsection-title:after {
+  position: absolute;
+  display: block;
+  content: '';
+  width: 10px;
+  height: 10px;
+  background: #1a9eeb;
+  left: 50%;
+  bottom: -16px;
+  margin-left: -5px;
+  border-radius: 50%;
+}
+.SPSHsection-intro {
+  margin: 90px 0 0 0;
+  color: lighten(#444444, 10%);
+
+}
+.SPSHsection-intro li{
+  list-style: square;
+  font-size: 120%;
+}
+.SPAbimg {
+  background-image: url('https://rceznisko.eu/images/galerie/kierunki_ksztalcenia/83-p.jpg');
+  border-top-left-radius: 500px;
+  border-bottom-left-radius: 500px;
+  margin-left: 50%;
+}
+@media screen and (max-width: 992px) {
+  .SPSHcontainer{
+    padding: 80px 0px;
+  }
+}

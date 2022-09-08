@@ -1,0 +1,37 @@
+.BookingContainer{
+    width: 100%;
+}
+.BookingMain{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+.BookingArive{
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.BookingTitleContainer{
+    padding-top: 80px;
+    padding-bottom: 10px;
+}
+.BookingTitle{
+    text-align: center;
+}
+.BookingSubtitle{
+    font-size: 110%;
+    padding: 20px;
+    text-align: center;
+}
+.BookingFormElement{
+    -webkit-touch-callout: none; /* iOS Safari                           */
+    -webkit-user-select: none; /* Safari                               */
+    -khtml-user-select: none; /* Konqueror HTML                       */
+    -moz-user-select: none; /* Firefox w przeszłości (stare wersje) */
+    -ms-user-select: none; /* Internet Explorer (>=10) / Edge      */
+    user-select: none;
+}
