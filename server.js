@@ -129,8 +129,6 @@ app.get('/api/checkRole', async (req, res) => {
 });
 
 app.post('/api/addStory', async (req, res) => {
-  const { storyTitle, storyText, userId } = req.body;
-
   const storage = multer.diskStorage({
     destination: async function (req, file, cb) {
       const userId = req.body.userId;
@@ -170,15 +168,16 @@ app.post('/api/addStory', async (req, res) => {
       return res.send({ error: req.fileValidationError });
     }
 
-    const { filename: image } = req.file;
-    console.log(image);
+    if (req.file) {
+      const { filename: image } = req.file;
 
-    await sharp(req.file.path)
-      .resize(1400, 400)
-      .jpeg({ quality: 100 })
-      .toFile(path.resolve(req.file.destination, '1' + image));
+      await sharp(req.file.path)
+        .resize(1400, 400)
+        .jpeg({ quality: 100 })
+        .toFile(path.resolve(req.file.destination, '1' + image));
 
-    fs.unlinkSync(req.file.path);
+      fs.unlinkSync(req.file.path);
+    }
 
     const story = {
       title: req.body.storyTitle,
