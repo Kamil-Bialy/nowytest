@@ -23,7 +23,7 @@ var options = {
 app.use(express.static('build', options));
 
 app.get('*', (req, res) => {
-  res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'));
+  res.sendFile(path.resolve(__dirname, 'build', 'index.html'));
 });
 
 const MongoURL = process.env.MONGO_URL;
