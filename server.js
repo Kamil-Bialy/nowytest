@@ -22,10 +22,6 @@ var options = {
 
 app.use(express.static('build', options));
 
-app.get('*', (req, res) => {
-  res.sendFile(path.resolve(__dirname, 'build', 'index.html'));
-});
-
 const MongoURL = process.env.MONGO_URL;
 const port = process.env.PORT || 5000;
 
@@ -411,4 +407,8 @@ app.get('/api/searchStories', async (req, res) => {
     ]);
     return res.send({ response });
   }
+});
+
+app.get('*', (req, res) => {
+  res.sendFile(path.resolve(__dirname, 'build', 'index.html'));
 });
