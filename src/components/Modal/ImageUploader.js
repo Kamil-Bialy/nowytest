@@ -7,7 +7,7 @@ function ImageUploader({ image, changeImage }) {
 
   return (
     <div className='wrapper'>
-      <div className='fileInputContainer'>
+      <div className='fileInputContainer' onClick={() => fileRef.click()}>
         <input
           type='file'
           name='storyImage'

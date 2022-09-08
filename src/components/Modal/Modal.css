@@ -13,6 +13,7 @@ body.active-modal {
   border: 0;
   color: white;
   border-radius: 50px;
+  cursor: pointer;
 }
 
 .modal,
