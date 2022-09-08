@@ -7,7 +7,6 @@ const { v4: uuidv4 } = require('uuid');
 const fs = require('fs');
 const Buffer = require('Buffer');
 const sharp = require('sharp');
-require('dotenv').config();
 
 const app = express();
 app.use(express.json());
