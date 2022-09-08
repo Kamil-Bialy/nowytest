@@ -1,5 +1,4 @@
 const express = require('express');
-const cors = require('cors');
 const bcrypt = require('bcrypt');
 const mongoose = require('mongoose');
 const multer = require('multer');
@@ -11,7 +10,6 @@ const sharp = require('sharp');
 require('dotenv').config();
 
 const app = express();
-app.use(cors());
 app.use(express.json());
 
 var options = {
